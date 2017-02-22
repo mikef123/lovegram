@@ -5,10 +5,13 @@
     <string name="text_button_login">Login</string>
     <string name="dont_have_account">¿Dont have a account?,</string>
     <string name="create_here">Create one here</string>
-    <string name="hint_email">Correo</string>
-    <string name="hint_confirm_password">Confirmar Contraseña</string>
-    <string name="text_button_createaccount">Únete</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_button_createaccount">Join</string>
     <string name="toolbar_tittle_createaccount">Create Account</string>
     <string name="hint_name">Name</string>
     <string name="hint_user">User</string>
+    <string name="username_card">Miguel Urquijo</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">4 días</string>
 </resources>
