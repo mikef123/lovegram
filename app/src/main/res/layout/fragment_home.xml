@@ -9,6 +9,7 @@
 
     <include layout="@layout/actionbar_toolbar"/>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,9 +20,14 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         >
 
-        <include layout="@layout/cardview_picture"/>
-        <include layout="@layout/cardview_picture"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pictureRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
     </LinearLayout>
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -29,6 +35,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/plus" />
+        android:src="@drawable/plus" />
 
 </android.support.design.widget.CoordinatorLayout>
