@@ -19,17 +19,35 @@ tools:context="com.valquiria.lovegram.view.fragment.ProfileFragment">
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbarProfile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:statusBarScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            >
 
-            <TextView
-                android:id="@+id/usernameProfile"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/username_card"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textsize_usernameprofile"
+                android:orientation="vertical"
+                android:paddingTop="200dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
 
-                />
+                >
+                <TextView
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username_card"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_usernameprofile"
+
+                    />
+            </LinearLayout>
+
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -45,8 +63,17 @@ tools:context="com.valquiria.lovegram.view.fragment.ProfileFragment">
 
 
     </android.support.design.widget.AppBarLayout>
-    
-    <android.support.v4.widget.CircleImageView
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pictureProfileRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="@dimen/dimen_circleimageprofile"
         android:layout_height="@dimen/dimen_circleimageprofile"
         android:src="@drawable/lugar"
@@ -63,7 +90,7 @@ tools:context="com.valquiria.lovegram.view.fragment.ProfileFragment">
         app:targetHeight="@dimen/width_circleimagetoolbar"
         />
 
-    <TextView
+  <!--<TextView
         android:id="@+id/usernameToolbarProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,6 +108,6 @@ tools:context="com.valquiria.lovegram.view.fragment.ProfileFragment">
         app:dependTargetY="@dimen/limitY_usernametoolbarprofile"
         app:targetY="@dimen/margintoptargety_usernametoolbarprofile"
         app:targetAlpha="1"
-        />
+        /> -->
 
 </android.support.design.widget.CoordinatorLayout>
