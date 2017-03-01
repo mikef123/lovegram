@@ -28,6 +28,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/lugar"
                 app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="true"
+                android:transitionName="@string/transition_name_picture"
 
                 />
 

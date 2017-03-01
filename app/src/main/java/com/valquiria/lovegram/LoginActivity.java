@@ -1,6 +1,7 @@
 package com.valquiria.lovegram;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,5 +26,19 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
     }
+
+    public void page (View view) {
+        String url = "http://platzigram.com/";
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+
+
+    }
+
+
+
+
 
 }
